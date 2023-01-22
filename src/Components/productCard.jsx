@@ -1,4 +1,5 @@
 import * as React from 'react';
+import "./ProductCard.css"
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -6,10 +7,19 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Shoes from "../images/Shoes.jpg"
+import TransitionsModal from './Popper';
 
-export default function ImgMediaCard() {
+
+export default function ProductCard({Data}) {
+  console.log(Data);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card 
+    className='Product-cards'
+    style={{
+        margin:"1vw",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)"
+    }}
+        sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -18,16 +28,15 @@ export default function ImgMediaCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {Data.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
+        {Data.description
+}        </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <TransitionsModal Data={Data}/>
+        <Button size="small">Add To Cart</Button>
       </CardActions>
     </Card>
   );

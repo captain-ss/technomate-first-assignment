@@ -1,4 +1,4 @@
-const products = [    {        name: "Men's Athletic Shoes",        description: "These shoes are perfect for running, jogging, and other athletic activities. They feature a lightweight design and durable construction.",        price: 70.00,        size: [8, 9, 10, 11],
+export const ProductsData = [    {        name: "Men's Athletic Shoes",        description: "These shoes are perfect for running, jogging, and other athletic activities. They feature a lightweight design and durable construction.",        price: 70.00,        size: [8, 9, 10, 11],
         brand: "Nike",
         color: ["Black", "White", "Blue"],
         discount: 0.10,

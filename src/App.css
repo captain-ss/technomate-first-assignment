@@ -1,5 +1,9 @@
+
 .Home-product-cards{
   display: flex;
   flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  padding:0vw 8vw;
   
 }
