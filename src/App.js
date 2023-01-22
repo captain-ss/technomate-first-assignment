@@ -1,6 +1,6 @@
 import './App.css';
 import { Link } from 'react-router-dom';
-import productCard from './Components/productCard';
+import ProductCard from './Components/productCard';
 function App() {
   return (
     <div className="App">
@@ -9,8 +9,17 @@ function App() {
       <Link to="/about" style={{ color: '#000000', textDecoration: 'none', marginLeft: '20px' }}>About</Link>
       <Link to="/contact" style={{ color: '#000000', textDecoration: 'none', marginLeft: '20px' }}>Contact</Link>
     </nav>
-      <productCard/>
+    <div className='Home-product-cards'>
+
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
        
+    </div>
     </div>
   );
 }
