@@ -1,159 +1,172 @@
+.OurMenu-PopUp-box {
+  width: 40vw;
 
+  background-color: white;
 
-.OurMenu-PopUp-box{
-    width: 40vw;
-    background-color: white;
-   
-    height: 43vw;
-    box-sizing: border-box;
-    padding: 1vw;
-    padding-bottom: 0vw;
-    border-radius: 0vw .3vw .3vw .3vw;
-    overflow: visible;
-    transition: top .1s;
-    z-index: 15;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+  height: 43vw;
+  box-sizing: border-box;
+  padding: 1vw;
+  padding-bottom: 0vw;
+  border-radius: 0vw 0.3vw 0.3vw 0.3vw;
+
+  transition: top 0.1s;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-.OurMenu-PopUp-box-cross-box{
-    width: 0vw;
-    height: 0vw;
-    overflow: visible;
-    cursor: pointer;
+.OurMenu-PopUp-box::-webkit-scrollbar {
+  display: none;
+}
+.OurMenu-PopUp-box-cross-box {
+  width: 0vw;
+  height: 0vw;
+  overflow: visible;
+  cursor: pointer;
 }
 
-.OurMenu-PopUp-box-cross-box div{
-    position: relative;
-    width: 3vw;
-    height: 3vw;
-    right: 4vw;
-    bottom: 1vw;
-    background-color: #FB7750;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.OurMenu-PopUp-box-cross-box div {
+  position: relative;
+  width: 3vw;
+  height: 3vw;
+  right: 4vw;
+  bottom: 1vw;
+  background-color: #fb7750;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.OurMenu-PopUp-box-cross-box img{
-    width: 1vw;
+.OurMenu-PopUp-box-cross-box img {
+  width: 1vw;
 }
-.OurMenu-PopUp-box-div1{
-width: 100%;
-background-color: #0AB42F;
-height: 18vw;
-border-radius: .4vw;
-background-image: url("../../images/Shoes.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-display: flex;
-justify-content: flex-end;
-
+.OurMenu-PopUp-box-div1 {
+  width: 100%;
+  height: 18vw;
+  border-radius: 0.4vw;
+  background-image: url("../../images/Shoes.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
 }
-.OurMenu-PopUp-box-div1-IconBox{
-    width: 1.5vw;
-    height: 1.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin: .5vw;
-    
-    
+.OurMenu-PopUp-box-div1-IconBox {
+  width: 1.5vw;
+  height: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0.5vw;
 }
-.OurMenu-PopUp-box-div1-IconBox img{
-width: 1.3vw;
+.OurMenu-PopUp-box-div1-IconBox img {
+  width: 1.3vw;
 }
-.OurMenu-PopUp-box-div2{
-    font-family: Outfit;
-    font-weight: 600;
-    font-size: 1.6vw;
-    width: 70%;
-    margin-top: .5vw;
+.OurMenu-PopUp-box-div2 {
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 1.6vw;
+  width: 70%;
+  margin-top: 0.5vw;
 }
-.OurMenu-PopUp-box-div3{
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 1vw;
-    width: 75%;
-    margin: .4vw 0vw;
-    color: #616161;
-
+.OurMenu-PopUp-box-div3 {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 1vw;
+  width: 75%;
+  margin: 0.4vw 0vw;
+  color: #616161;
 }
-.OurMenu-PopUp-box-div4{
-    width: 100%;padding-top: .4vw;
-    font-family: Outfit;
-    font-weight: 600;
-    font-size: 1.4vw;
-    border-top: 1px solid #E0E0E0;
-    
+.info-boxes-Deatiled-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.OurMenu-PopUp-box-div5{
-    display: flex;
-    align-items: center;
-    margin-top: .3vw;
+.info-box-Deatiled-card {
+  width: 22%;
+  margin-top: 1vw;
+  text-align: center;
+  height: 3.5vw;
+  border: 1px solid gray;
+  border-radius: 0.3vw;
 }
-.OurMenu-PopUp-box-div5 input{
-    cursor: pointer;
+.info-box-Deatiled-card div {
+  margin: 0.2vw;
+}
+.OurMenu-PopUp-box-div4 {
+  width: 100%;
+  padding-top: 0.4vw;
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 1.4vw;
+  border-top: 1px solid #e0e0e0;
+}
+.OurMenu-PopUp-box-div5 {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3vw;
+}
+.OurMenu-PopUp-box-div5 input {
+  cursor: pointer;
 }
 .OurMenu-PopUp-box-div5-part1 img {
-    width: 1.2vw;
-    margin-right: .4vw;
+  width: 1.2vw;
+  margin-right: 0.4vw;
 }
-.OurMenu-PopUp-box-div5-part2{
-    font-family: DM Sans;
-    font-weight: 600;
-    font-size: 1vw;
-    color: #263238;
-    width: 26vw;
+.OurMenu-PopUp-box-div5-part2 {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 1vw;
+  color: #263238;
+  width: 26vw;
 }
-.OurMenu-PopUp-box-div5-part3{
-    font-family: Bebas Neue;
-    font-size: 1.4vw;
-    font-weight: 400;
-    margin-right: .7vw;
-    
+.OurMenu-PopUp-box-div5-part3 {
+  font-family: Bebas Neue;
+  font-size: 1.4vw;
+  font-weight: 400;
+  margin-right: 0.7vw;
 }
-.OurMenu-PopUp-box-div5-part3 img{
-    width: .75vw;
-    margin-right: 0vw;
-    margin-left: 3vw;
+.OurMenu-PopUp-box-div5-part3 img {
+  width: 0.75vw;
+  margin-right: 0vw;
+  margin-left: 3vw;
 }
-.OurMenu-PopUp-box-div6{
-    margin-top: 3vw;
-    border-radius: 0vw 0vw .4vw .4vw;
-    width: calc(100% + 2vw);
-    position: relative;
-    right: 1vw;
-    top: .4vw;
-    height: 4vw;
-    display: flex;
+.OurMenu-PopUp-box-div6 {
+  margin-top: 3vw;
+  border-radius: 0vw 0vw 0.4vw 0.4vw;
+  width: calc(100% + 2vw);
+  position: relative;
+  right: 1vw;
+  top: 0.4vw;
+  height: 4vw;
+  display: flex;
 }
-.OurMenu-PopUp-box-div6-part1{
-    border-radius: 0vw 0vw 0vw .4vw;
-    width: 50%;
-    background-color: #FEF6EE;
-    height: 4vw;
+.OurMenu-PopUp-box-div6-part1 {
+  border-radius: 0vw 0vw 0vw 0.4vw;
+  width: 50%;
+  background-color: #fef6ee;
+  height: 4vw;
 }
-.OurMenu-PopUp-box-div6-part2{
-    cursor: pointer;
-    width: 50%;
-    height: 4vw;
-    border-radius: 0vw 0vw .3vw 0vw;
+.OurMenu-PopUp-box-div6-part2 {
+  cursor: pointer;
+  width: 50%;
+  height: 4vw;
+  border-radius: 0vw 0vw 0.3vw 0vw;
 
-    background-color: #FB7750;
+  background-color: #fb7750;
 }
-.OurMenu-PopUp-box-div6-part2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Outfit;
-    font-weight: 700;
-    font-size: 1vw;
-    text-transform: uppercase;
-    color: white;
+.OurMenu-PopUp-box-div6-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 1vw;
+  text-transform: uppercase;
+  color: white;
 }
-.OurMenu-PopUp-box-div6-part2 img{
-    width: 1.4vw;
-    margin-right: .4vw;
+.OurMenu-PopUp-box-div6-part2 img {
+  width: 1.4vw;
+  margin-right: 0.4vw;
 }
