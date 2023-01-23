@@ -36,6 +36,7 @@ const DetailCard = ({ Data }) => {
             <div>${Data.price}</div>
           </div>
         </div> */}
+          <div className="detailedCard-info">Price : ${Data.price}</div>
         <div
           className="detailedCard-info"
           style={{
@@ -48,7 +49,7 @@ const DetailCard = ({ Data }) => {
             return <div>{item},</div>;
           }):Data.size}
         </div>
-        <div className="detailedCard-info">Price : ${Data.price}</div>
+        <div className="detailedCard-info">Brand :  {Data.brand}</div>
         <div className="detailedCard-info">Price : ${Data.price}</div>
 
         <div className="OurMenu-PopUp-box-div6">
