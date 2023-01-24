@@ -1,19 +1,21 @@
-import './App.css';
-import ProductCard from './Components/productCard';
-import Navbar from './Components/Navbar/Navbar';
-import { ProductsData } from './DummyData';
+import "./App.css";
+import ProductCard from "./Components/productCard";
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./pages/Home";
+import Footer from "./Components/Footer";
+
+
+
+
+
+
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-    <div className='Home-product-cards'>
-
-     {ProductsData.map((Data,idx)=>{
-      return <ProductCard Data={Data} key={idx}/>
-     })}
+      <Navbar />
+      <Home />
+      <Footer />
     </div>
-    </div>
-
   );
 }
 
