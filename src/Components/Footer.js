@@ -1,10 +1,20 @@
-
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div
+      style={{
+        backgroundColor: "#212529",
+        padding: "1vw",
+        textAlign: "center",
+        color: "white",
 
-export default Footer
+        textTransform: "capitalize",
+      }}
+    >
+      Technomate startup services pvt ltd.
+    </div>
+  );
+};
+
+export default Footer;
