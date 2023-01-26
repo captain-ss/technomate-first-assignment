@@ -7,3 +7,14 @@
   padding:0vw 8vw;
   
 }
+.addProductForm{
+  background-color: aliceblue;
+  border-radius: .2vw;
+  padding: 2vw;
+  height: 80vh;
+  width: 60vw;
+  overflow-y: scroll;
+}
+.addProductForm::-webkit-scrollbar {
+  display: none;
+}
