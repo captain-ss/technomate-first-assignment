@@ -1,7 +1,4 @@
 export const ProductsData = [
-  
-  
-
   {
     name: "Luxury Handbag",
     description:

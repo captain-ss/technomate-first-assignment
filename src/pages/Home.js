@@ -2,14 +2,15 @@ import * as React from "react";
 import ProductCard from "../Components/productCard";
 import { ProductsData } from "../DummyData";
 import "../App.css";
+import { useState, useEffect } from "react";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
 import Form from "react-bootstrap/Form";
+import axios from "axios";
 
 function AddProductForm() {
   return (
@@ -71,10 +72,21 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
 };
+
 const Home = () => {
+  const [Products, setProducts] = useState();
+  
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  useEffect(() => {
+    try {
+      const res =  axios.get(`http://localhost/First/read.php`);
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
   return (
     <div>
       <div>
@@ -98,9 +110,7 @@ const Home = () => {
             </Fade>
           </Modal>
         </div>
-        <div>
-          filters
-        </div>
+        <div>filters</div>
       </div>
       <div className="Home-product-cards">
         {ProductsData.map((Data, idx) => {

@@ -10,7 +10,7 @@ import Shoes from "../images/Shoes.jpg";
 import TransitionsModal from "./Popper";
 
 export default function ProductCard({ Data }) {
-  console.log(Data);
+ 
   return (
     <Card
       className="Product-cards"
