@@ -44,10 +44,7 @@ const DetailCard = ({ Data }) => {
           }}
         >
           Size :{" "}
-          {Array.isArray(Data.size)?
-          Data.size.map((item, idx) => {
-            return <div>{item},</div>;
-          }):Data.size}
+          {Data.size}
         </div>
         <div className="detailedCard-info">Brand :  {Data.brand}</div>
         <div className="detailedCard-info">Price : ${Data.price}</div>

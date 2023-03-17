@@ -74,19 +74,10 @@ const style = {
 };
 
 const Home = () => {
-  const [Products, setProducts] = useState();
   
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  useEffect(() => {
-    try {
-      const res =  axios.get(`http://localhost/First/read.php`);
-      console.log(res);
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
   return (
     <div>
       <div>
